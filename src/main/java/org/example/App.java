@@ -23,11 +23,6 @@ public class App
         float secondNumber = sc.nextFloat();
 
         Calculator calculate = new Calculator(firstNumber, operation, secondNumber);
-        float result = calculate.displayResult();
-
-        if(result == -1)
-            System.out.println("Invalid Operation");
-        else
-            System.out.println("Result is "+ result);
+        System.out.println("Result is "+ calculate.displayResult());
     }
 }
